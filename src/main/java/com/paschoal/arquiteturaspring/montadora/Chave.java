@@ -1,6 +1,6 @@
 package com.paschoal.arquiteturaspring.montadora;
 
-public class Chaves {
+public class Chave {
     private Montadora montadora;
     private String tipo;
 

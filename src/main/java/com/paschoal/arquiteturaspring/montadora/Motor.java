@@ -1,11 +1,12 @@
 package com.paschoal.arquiteturaspring.montadora;
 
 public class Motor {
+
     private String modelo;
     private Integer cavalos;
     private Integer cilindros;
     private Double litragem;
-    private tipo TipoMTipo;
+    private TipoMotor tipo;
 
     public String getModelo() {
         return modelo;
@@ -39,11 +40,22 @@ public class Motor {
         this.litragem = litragem;
     }
 
-    public tipo getTipoMTipo() {
-        return TipoMTipo;
+    public TipoMotor getTipo() {
+        return tipo;
     }
 
-    public void setTipoMTipo(tipo tipoMTipo) {
-        TipoMTipo = tipoMTipo;
+    public void setTipo(TipoMotor tipo) {
+        this.tipo = tipo;
+    }
+
+    @Override
+    public String toString() {
+        return "Motor{" +
+                "modelo='" + modelo + '\'' +
+                ", cavalos=" + cavalos +
+                ", cilindros=" + cilindros +
+                ", litragem=" + litragem +
+                ", tipo=" + tipo +
+                '}';
     }
 }
